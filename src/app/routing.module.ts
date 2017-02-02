@@ -1,17 +1,31 @@
 import {NgModule} from "@angular/core";
-import {LoginComponent} from "./pages/login/login.component";
-import {ListComponent} from "./pages/list/list.component";
+import {WelcomeComponent} from "./pages/welcome/welcome.component";
+import {Angular2Component} from "./pages/angular2/angular2.component";
+import {RoutingComponent} from "./pages/angular2/routing/routing.component";
+import {FirstNestedComponent} from "./pages/angular2/routing/firstnested/first-nested.component";
+import {SecondNestedComponent} from "./pages/angular2/routing/secondnested/second-nested.component";
 @NgModule({
-  declarations: [LoginComponent,ListComponent],
+  declarations: [WelcomeComponent,
+    Angular2Component,
+    RoutingComponent,
+    FirstNestedComponent,
+    SecondNestedComponent
+  ],
   exports: [
-  LoginComponent,
-  ListComponent
+  WelcomeComponent,
+  Angular2Component,
+    RoutingComponent,
+    FirstNestedComponent,
+    SecondNestedComponent
 ]
 
 })
 export class RoutingModule {}
 
 export {
-LoginComponent,
-ListComponent
+WelcomeComponent,
+Angular2Component,
+  RoutingComponent,
+  FirstNestedComponent,
+  SecondNestedComponent
 }

@@ -1,8 +1,12 @@
-<h1>
-  {{title}}
-</h1>
 <nav>
-  <a routerLink="/login" routerLinkActive="active">Login</a>
-  <a routerLink="/list" routerLinkActive="active">List</a>
+  <a routerLink="/welcome" routerLinkActive="active">Welcome</a>
+  <a routerLink="/angular2" routerLinkActive="active">Angular 2</a>
+  <div class="sub-route">
+    <a routerLink="/angular2/routing" routerLinkActive="active">Routing</a>
+    <a routerLink="/angular2/anything" routerLinkActive="active">Anything else</a>
+  </div>
 </nav>
-<router-outlet></router-outlet>
+<div class="main-container">
+  <router-outlet></router-outlet>
+</div>
+
