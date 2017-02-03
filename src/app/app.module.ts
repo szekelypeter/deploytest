@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { RoutingModule } from './routing.module';
+import {RoutingRoutingModule} from "./pages/angular2/routing/routing.module";
 
 
 @NgModule({
@@ -17,7 +17,7 @@ import { RoutingModule } from './routing.module';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    RoutingModule
+    RoutingRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

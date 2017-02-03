@@ -1,1 +1,10 @@
+nav a{
+  text-decoration: none;
+  color: #999999;
+  padding: 0 5px;
 
+}
+
+nav a.active{
+  color: #444444;
+}
