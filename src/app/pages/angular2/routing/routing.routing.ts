@@ -4,7 +4,6 @@ import {SecondNestedComponent} from "./secondnested/second-nested.component";
 import {RoutingComponent} from "./routing.component"
 import {FirstSecondNestedComponent} from "./firstnested/fsnested/first-second-nested.component";
 import {FirstFirstNestedComponent} from "./firstnested/ffnested/first-first-nested.component";
-import {NestedRoutingModule} from "./routing.module"
 
 
 export const routingRoutes: Routes = [

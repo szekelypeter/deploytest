@@ -1,9 +1,9 @@
-import {routingRoutes} from "./routing.routing";
 import {RouterModule} from "@angular/router";
+import {NgModule} from "@angular/core";
 
 import {SecondNestedComponent} from "./secondnested/second-nested.component";
 import {RoutingComponent} from "./routing.component"
-import {NgModule} from "@angular/core";
+import {routingRoutes} from "./routing.routing";
 import {NestedRoutingModule} from "./firstnested/first-nested.module";
 
 @NgModule({
@@ -14,7 +14,6 @@ import {NestedRoutingModule} from "./firstnested/first-nested.module";
   declarations: [
     SecondNestedComponent,
     RoutingComponent
-
   ],
   exports: [
     SecondNestedComponent,
