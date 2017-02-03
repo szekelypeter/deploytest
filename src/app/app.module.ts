@@ -17,7 +17,7 @@ import {RoutingRoutingModule} from "./pages/angular2/routing/routing.module";
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    RoutingRoutingModule
+    RoutingRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

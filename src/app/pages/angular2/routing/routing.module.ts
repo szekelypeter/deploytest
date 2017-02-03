@@ -1,10 +1,10 @@
 import {routingRoutes} from "./routing.routing";
 import {RouterModule} from "@angular/router";
 
-import {FirstNestedComponent} from "./firstnested/first-nested.component";
 import {SecondNestedComponent} from "./secondnested/second-nested.component";
 import {RoutingComponent} from "./routing.component"
 import {NgModule} from "@angular/core";
+import {NestedRoutingModule} from "./firstnested/first-nested.module";
 
 @NgModule({
   imports: [
@@ -12,15 +12,14 @@ import {NgModule} from "@angular/core";
     RouterModule.forChild(routingRoutes)
   ],
   declarations: [
-    FirstNestedComponent,
     SecondNestedComponent,
     RoutingComponent
 
   ],
   exports: [
-    FirstNestedComponent,
     SecondNestedComponent,
-    RoutingComponent
+    RoutingComponent,
+    NestedRoutingModule,
   ]
 
 })
@@ -28,7 +27,7 @@ class RoutingRoutingModule {}
 
 export {
   RoutingRoutingModule,
-  FirstNestedComponent,
   SecondNestedComponent,
-  RoutingComponent
+  RoutingComponent,
+  NestedRoutingModule
 }

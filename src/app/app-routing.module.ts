@@ -4,9 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import {WelcomeComponent} from "./pages/welcome/welcome.component";
 import {Angular2Component} from "./pages/angular2/angular2.component";
 
-
-
-
 const appRoutes: Routes = [
   {
     path: 'welcome',
