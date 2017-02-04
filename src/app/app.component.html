@@ -1,7 +1,11 @@
 <nav>
-  <a routerLink="/welcome" routerLinkActive="active">Welcome</a>
-  <a routerLink="/angular2" routerLinkActive="active">Angular 2</a>
-  <div class="sub-route">
+  <a routerLink="/welcome" routerLinkActive="active" (click)="activeRoute('welcome')">Welcome</a>
+  <a routerLink="/about-me" routerLinkActive="active" (click)="activeRoute('aboutMe')">About me</a>
+  <div *ngIf="aboutMeRoute" class="sub-route">
+    <a routerLink="/about-me/photos" routerLinkActive="active">Photos</a>
+  </div>
+  <a routerLink="/angular2" routerLinkActive="active" (click)="activeRoute('angular2')">Angular 2</a>
+  <div *ngIf="angular2Route" class="sub-route">
     <a routerLink="/angular2/routing" routerLinkActive="active">Routing</a>
     <a routerLink="/angular2/user-input" routerLinkActive="active">User input biding</a>
   </div>

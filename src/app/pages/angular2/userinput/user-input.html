@@ -3,8 +3,8 @@
 <p>This input is written out if you press enter, or click the button, and set the value to nothing</p>
 <input #userInput (keyup.enter)="newUserInput(userInput.value); userInput.value = ''">
 <button (click)="newUserInput(userInput.value); userInput.value = ''">Show user input</button>
-<p>{{userInputs}}</p>
+<p>{{userInputs | capitalize }}</p>
 
 <p>This input is written out every time you press a character</p>
 <input #userInputCont (keyup)="onKey(userInputCont.value)">
-<p>{{userInputConts}}</p>
+<p>{{userInputConts | capitalize}}</p>
