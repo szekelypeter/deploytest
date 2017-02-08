@@ -1,5 +1,15 @@
 <h3>This is a photos sub page</h3>
 
 <div *ngFor = "let photo of photos">
-  <img src="{{photo}}" max-width="500px">
+  <div class="image-holder">
+    <span class="helper"></span>
+    <img src="{{photo.photoMini}}" (click)="getOriginalSize(photo)">
+  </div>
+</div>
+<carousel [photos]="photos"></carousel>
+<div *ngIf = "originalSize" class="original-photo">
+  <div class="image-holder">
+    <span class="helper"></span>
+    <img src="{{originalPhoto}}" (click)="noOriginal()">
+  </div>
 </div>

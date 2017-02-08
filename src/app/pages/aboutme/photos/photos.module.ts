@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import {PhotosComponent} from "./photos.component"
 import {photosRouting} from "./photos.routing";
+import {CarouselComponent} from "./carosuel.component";
 
 @NgModule({
   imports: [
@@ -12,10 +13,12 @@ import {photosRouting} from "./photos.routing";
     RouterModule.forChild(photosRouting)
   ],
   declarations: [
-    PhotosComponent
+    PhotosComponent,
+    CarouselComponent
   ],
   exports: [
     PhotosComponent,
+    CarouselComponent
   ]
 
 })
@@ -23,5 +26,6 @@ class PhotosModule {}
 
 export {
   PhotosComponent,
-  PhotosModule
+  PhotosModule,
+  CarouselComponent
 }
